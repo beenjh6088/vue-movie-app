@@ -1,8 +1,31 @@
 # Vue3 템플릿 with Webpack
 
+## 06. Headline
+- OMDbAPI 홈페이지에 헤드라인 복사
+- src/components 에 Headline.vue 생성 후 헤드라인 붙여넣기
+- Home.vue 에 내용을 초기화한 후 Headline 컴포넌트를 넣는다.
+- Home.vue 에 있는 Headline은 브라우저 좌측으로 붙어서 나오는 걸 확인할 수 있는데 이 문제를 해결하기 위해 bootstrap container를 사용한다.
+  1. bootstrap >> Docs >> Layout >> Containers 참조
+  2. 수평 중앙정렬 적요을 위한 태그에 container 클래스를 넣는다.
+
+
+
+## 05. Header - Logo 및 Google Fonts
+- google fonts 접속
+- roboto 검색
+  1. regular 400, bold 700 선택
+- oswald 검색
+  1. medium 500 선택
+- 우측 네비에서 \<link> 선택 후 태그 복사
+- index.html에 붙여넣기
+- google font 사이트로 돌아와서 roboto관련 css 코드를 복사하여 index.html style body 태그에 적용하기
+- src/components 에 Logo.vue 파일 생성
+- .logo 클래스에 oswald css코드 붙여넣기
+
+
 ## 04. Header - Nav
 - src/component에 Header.vue 생성
-- <router-link>의 active-class 역할
+- \<router-link>의 active-class 역할
 
 ## 03. Bootstrap 구성
 
