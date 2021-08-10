@@ -1,5 +1,16 @@
 # Vue3 템플릿 with Webpack
 
+## 04. Header - Nav
+- src/component에 Header.vue 생성
+- <router-link>의 active-class 역할
+
+## 03. Bootstrap 구성
+
+- $ npm i bootstrap@next
+- src/scss/main.scss에서 bootstrap 패키지 import
+- main.scss와 App.vue를 연결
+- scss Customizing(bootstrap 사이트 참조)
+
 ## Versions
 
 - [Default](https://github.com/ParkYoungWoong/vue3-webpack-template/tree/master)<br>
