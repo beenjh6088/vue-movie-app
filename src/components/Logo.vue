@@ -2,7 +2,7 @@
   <RouterLink
     to="/" 
     class="logo">
-    OMDbAPI.COM
+    <span>OMDbAPI</span>.COM
   </RouterLink>
 </template>
 

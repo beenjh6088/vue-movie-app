@@ -1,5 +1,21 @@
 # Vue3 템플릿 with Webpack
 
+## 08. Search - 버튼
+- Search.vue 하단에 Search 버튼 만들기
+- 버튼 css 중 flex-shrink = 0 속성 주목
+- npm i axios
+- Search.vue 에 axios import하기
+- apply 메서드에 axios.get('https://www.omdbapi.com/?apikey=[yourkey]&')
+
+
+## 07. Search - 필터
+- /src/component 에 Search.vue 생성
+- Search.vue 에 입력 폼 생성
+- class="form-control"
+- class="form-select"
+- 입력 컴포넌트와 data 바인딩
+- Home.vue에 Search.vue 임포트
+
 ## 06. Headline
 - OMDbAPI 홈페이지에 헤드라인 복사
 - src/components 에 Headline.vue 생성 후 헤드라인 붙여넣기
@@ -7,8 +23,6 @@
 - Home.vue 에 있는 Headline은 브라우저 좌측으로 붙어서 나오는 걸 확인할 수 있는데 이 문제를 해결하기 위해 bootstrap container를 사용한다.
   1. bootstrap >> Docs >> Layout >> Containers 참조
   2. 수평 중앙정렬 적요을 위한 태그에 container 클래스를 넣는다.
-
-
 
 ## 05. Header - Logo 및 Google Fonts
 - google fonts 접속
@@ -21,7 +35,6 @@
 - google font 사이트로 돌아와서 roboto관련 css 코드를 복사하여 index.html style body 태그에 적용하기
 - src/components 에 Logo.vue 파일 생성
 - .logo 클래스에 oswald css코드 붙여넣기
-
 
 ## 04. Header - Nav
 - src/component에 Header.vue 생성
