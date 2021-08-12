@@ -1,5 +1,36 @@
 # Vue3 템플릿 with Webpack
 
+## 11. 영화 검색
+- actions 영역에서 정의한 메서드에는 context, payload라는 매개변수를 제공한다
+  1. context는 store의 속성에 접근할 수 있다. 예를 들면 context.state
+  2. payload는 payload를 매개변수로 받는 메서드가 실제 쓰이는 부분에서 넘기는 특정 데이터. 예를 들면 searchMovies({})
+- actions 영역에 searchMovies 메서드 작성
+  1. 다른 컴포넌트로부터 받은 데이터를 state 영역의 데이터와 매핑시키기. 예를 들면 context.commit('updateState', {movies: Search})
+- mutations 영역에 updateState 메서드 만들기
+- Search.vue 의 apply 메서드에 스토어 연결시키기. this.$store.dispatch('movie/searchMovies', {title: this.title, ...})
+  1. Store의 Mutations를 실행할 땐 .commit() 사용
+  2. Store의 Actions를 실행할 땐 .dispatch() 사용
+- MovieList.vue 의 computed 영역에 Store에 저장된 movies 값을 보관하기
+- MovieList.vue 의 template 영역에 MovieItem 컴포넌트에 movie라는 속성으로 computed 의 movies 값을 v-for를 통해 넘기기
+- MovieItem.vue 에서 MovieList.vue로부터 받은 movie값을 연결하기. props
+
+## 10. Vuex(Store) 구성
+- npm i vuex@next
+- src 폴더에 store 폴더 생성
+- src/store 폴더에 index.js 파일 생성
+- createStore로 store 객체 생성후 modules로 공유할 데이터를 모듈화하기
+- main.js에서 store 연결시키기
+- store폴더에 about.js, movie.js 파일 생성
+- movie.js 에 store 관련 속성 나열
+- store/index.js 에 movie.js 임포트시키기
+
+
+## 09. Vuex(Store) 개요
+- src/components 에 MovieList.vue, MovieItem.vue 만들기
+- Home.vue에 MovieList.vue 컴포넌트 추가
+- Home.vue에 있는 Search와 MovieList의 관계는 형제관계인데
+서로간의 데이터 공유를 위해서 Vuex(Store) 가 필요함
+
 ## 08. Search - 버튼
 - Search.vue 하단에 Search 버튼 만들기
 - 버튼 css 중 flex-shrink = 0 속성 주목
