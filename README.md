@@ -1,5 +1,8 @@
 # Vue3 템플릿 with Webpack
 
+## 17. 영화 검색 코드 리팩토링
+- movies.js의 axios.get 메서드 모듈화
+
 ## 11. 영화 검색
 - actions 영역에서 정의한 메서드에는 context, payload라는 매개변수를 제공한다
   1. context는 store의 속성에 접근할 수 있다. 예를 들면 context.state
