@@ -1,6 +1,27 @@
 # Vue3 템플릿 with Webpack
 
+## 19. 영화 아이템 - 텍스트 말줄임 표시와 배경 흐림 처리
+- 생략부분 표시
+  1. white-space : nowrap
+  2. overflow : hidden
+  3. text-overflow : ellipsis
+- 블러 현상
+  1. backdrop-filter : blur(10px) grayscale();
+
+
+## 18. 영화 아이템 - 기본 출력
+- item 출력
+  1. div 요소에 backgroundImage로 Poster넣기
+  2. info 정보 넣기
+
+## 17. 영화 검색 코드 리팩토링
+- movie.js 의 actions 부분 영화조회 부분 모듈화(_fetchMovie)
+- _fetchMovie 에서 axios.get() 메서드 에러처리 및 메시지 출력 기능
+
+
 ## 16. 비동기 - API 비동기 처리 연습
+- 테스트를 위해 axios cdn으로 받기
+- OMDB_API_KEY에 유효값/비유효값을 넣어서 async-await, non-async-awit별로 예외처리하기
 
 ## 15. 비동기 - 예외 처리(then, catch, finally)
 - Promise.prototype.then()
