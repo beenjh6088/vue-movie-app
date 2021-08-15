@@ -1,5 +1,31 @@
 # Vue3 템플릿 with Webpack
 
+## 16. 비동기 - API 비동기 처리 연습
+
+## 15. 비동기 - 예외 처리(then, catch, finally)
+- Promise.prototype.then()
+- Promise.prototype.catch()
+- Promise.prototype.finally()
+- Promise 객체는 async await를 사용할 수 있음
+- async await 를 사용하지 못 한다면 then - catch - finally 를 사용할 수 있음
+
+## 14. 비동기 - 콜백과 프로미스 객체의 이해
+- 콜백과 프로미스를 통해서 프로그램의 실행 순서를 보장할 수 있음.
+- 콜백함수의 매개변수는 콜백함수가 데이터로 쓰이는 함수에서 정의해줌
+- Pormise 객체에서 매개 변수로 받는 resolve는 Promise의 로직이 끝난 뒤 실행됨. resolve에 인수로 전달하는 데이터는 Promise 객체가 리턴된 변수에 저장됨
+
+## 13. 영화 목록에서 ID 중복 제거
+- lodash 사용법
+  1. lodash 사이트 접속
+  2. 우측 상단에 Documentation 클릭
+  3. 좌측 상단에 uniq 검색
+  4. 좌측 내비게이션에서 uniqBy 클릭
+- npm i lodash
+- actions 영역에 movies : _uniqBy(Search, 'imdbID')
+
+## 12. 영화 검색 추가 요청
+- movie.js 에 Search.vue 의 number 에 따른 추가 요청
+
 ## 11. 영화 검색
 - actions 영역에서 정의한 메서드에는 context, payload라는 매개변수를 제공한다
   1. context는 store의 속성에 접근할 수 있다. 예를 들면 context.state
