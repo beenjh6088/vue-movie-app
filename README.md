@@ -1,5 +1,21 @@
 # Vue3 템플릿 with Webpack
 
+## 21. 에러 메시지 출력과 로딩 애니메이션
+
+
+## 20. Container 너비 사용자 지정
+- Container 너비 사용자 지정
+  1. 부트스트랩 홈페이지 접속
+  2. 상단 메뉴 Docs 클릭
+  3. 좌측 내비 Layout > Containers 클릭
+  4. main.scss 에 Sass 부분 코드 복붙
+  5. inner 클래스로 MovieItem 컨테이너 CSS 적용
+- loading animation
+  1. 부트스트랩 홈페이지 접속
+  2. 상단 메뉴 Docs 클릭
+  4. MovieList.vue 에 해당 코드 복붙
+  3. 좌측 내비 Layout > Components > Spinners 클릭
+
 ## 19. 영화 아이템 - 텍스트 말줄임 표시와 배경 흐림 처리
 - 생략부분 표시
   1. white-space : nowrap
