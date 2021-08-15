@@ -25,6 +25,7 @@
 
 ## 12. 영화 검색 추가 요청
 - movie.js 에 Search.vue 의 number 에 따른 추가 요청
+7e97c3c3f720
 
 ## 11. 영화 검색
 - actions 영역에서 정의한 메서드에는 context, payload라는 매개변수를 제공한다
