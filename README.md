@@ -1,7 +1,18 @@
 # Vue3 템플릿 with Webpack
 
+## 26. 영화 상세 페이지 정리
+
+
+
+## 25. Loader
+- Loader.vue 만들기
+  1. props 로 받은 데이터를 통해서 클래스 만들기
+- MovieList.vue 랑 Movie.vue 에 Loader.vue 임포트하기
+
+
 ## 24. 스켈레톤 UI
 - Movie.vue 에 mark-up, css 만들기
+
 
 ## 23. 단일 영화 상세 정보 가져오기
 - movie.js에 영화 상세정보 조회 메서드 생성
